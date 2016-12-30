@@ -4,10 +4,13 @@
 \alias{gra}
 \title{Pojedyncza gra}
 \usage{
-gra(strategia)
+gra(strategia, wektor_cen = c(krolik = 1, owca = 6, swinia = 12, krowa = 36,
+  kon = 72, maly_pies = 6, duzy_pies = 36))
 }
 \arguments{
 \item{strategia}{Zadana strategia zgodnie z ktora przeprowadzimy gre.}
+
+\item{wektor_cen}{Przechowuje wartosci zwierzat przeliczone na kroliki}
 }
 \value{
 Zwracamy dlugosc trwania gry (liczbe tur).

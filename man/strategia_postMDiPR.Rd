@@ -4,10 +4,13 @@
 \alias{strategia_postMDiPR}
 \title{Strategia gry superfarmer}
 \usage{
-strategia_postMDiPR(stado_tmp9)
+strategia_postMDiPR(stado_tmp9, ceny = c(krolik = 1, owca = 6, swinia = 12,
+  krowa = 36, kon = 72, maly_pies = 6, duzy_pies = 36))
 }
 \arguments{
 \item{stado_tmp9}{Przechowuje wartosc naszego stada.}
+
+\item{ceny}{Przechowuje wartosci zwierzat przeliczone na kroliki}
 }
 \value{
 Zwraca stado po wymianach.

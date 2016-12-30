@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Strategia gdy mamy konia i du?o innych\n#'\n#' Funkcja uruchamamy gdy mamy jednego konia i na tyle du?o innych zwierz?t ?e mo?liwa jest ju? wygrana. Funkcja opracowuje najlepsz? dla nas zamiane\n#'\n#' @param stado_tmp4 Przechowuje wartosc naszego stada\n#'\n#' @return ruch_zamana zwraca jakie zwierze ma by? wymienione na jakie\n\njeden_kon_wiecej_niz_127 <- function( stado_tmp4 = stado ){\n  ruch_zamiana <- c(0,0)\n  #poprawic\n  if (stado_tmp4[\"krolik\"] == 0 && stado_tmp4[\"krowa\"] > 0 ) {\n    ruch_zamiana <- c(\"krowa\", \"krolik\")\n  } else if  (stado_tmp4[\"owca\"] == 0 && stado_tmp4[\"krowa\"] > 0 ) {\n    ruch_zamiana <- c(\"krowa\", \"owca\")\n  } else if (stado_tmp4[\"swinia\"] == 0 && stado_tmp4[\"krowa\"] > 0 ) {\n    ruch_zamiana <- c(\"krowa\", \"swinia\")\n    #koniec popraw\n  } else if (stado_tmp4[\"krolik\"] == 0 && stado_tmp4[\"swinia\"] > 0 ) {\n    ruch_zamiana <- c(\"swinia\", \"krolik\")\n  } else if (stado_tmp4[\"owca\"] == 0 && stado_tmp4[\"swinia\"] > 0 ) {\n    ruch_zamiana <- c(\"swinia\", \"owca\")\n  } else if (stado_tmp4[\"krolik\"] == 0 && stado_tmp4[\"owca\"] > 0 ) {\n    ruch_zamiana <- c(\"owca\", \"krolik\")\n  } else if (stado_tmp4[\"owca\"] == 0 && stado_tmp4[\"krolik\"] > 6 ) {\n    ruch_zamiana <- c(\"krolik\", \"owca\")\n  } else if (stado_tmp4[\"swinia\"] == 0 ) {\n    ruch_zamiana <- c(\"swinia\", 50)\n  } else if (stado_tmp4[\"krowa\"] == 0 ) {\n    ruch_zamiana <- c(\"krowa\", 50)\n  }\n  return (ruch_zamiana)\n}\n",
+    "created" : 1483116574900.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2153110671",
+    "id" : "7C18FC04",
+    "lastKnownWriteTime" : 1483116571,
+    "last_content_update" : 1483116571,
+    "path" : "C:/Users/Lenovo/Downloads/jeden_kon_wiecej_niz_127.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

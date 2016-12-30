@@ -79,16 +79,6 @@ test_that("Poprawna wymiana w strategia_postMDiPR",{
 test_that("Poprawna wymiana w strategia_postMDiPR",{
   expect_equivalent(strategia_postMDiPR(c(36, 0, 0,1,1,0,0)),c(0,0,0,0,2,0,0))
 })
-#do poprawy tu jest to jeden_kon_wiecej_niz_127
-#test_that("Poprawna wymiana w strategia_postMDiPR",{
-#  expect_equivalent(strategia_postMDiPR(c(0,2,1,1,1,0,0)),c(36,2,1,0,1,0,0))
-#})
-#test_that("Poprawna wymiana w strategia_postMDiPR",{
-#  expect_equivalent(strategia_postMDiPR(c(1,0,2,1,1,0,0)),c(1,6,2,0,1,0,0))
-#})
-#test_that("Poprawna wymiana w strategia_postMDiPR",{
-#  expect_equivalent(strategia_postMDiPR(c(1,3,0,1,1,0,0)),c(1,3,3,0,1,0,0))
-#})
 test_that("Poprawna wymiana w strategia_postMDiPR",{
   expect_equivalent(strategia_postMDiPR(c(0,3,4,0,1,0,0)),c(12,3,3,0,1,0,0))
 })
@@ -106,6 +96,17 @@ test_that("Poprawna wymiana w strategia_postMDiPR",{
 })
 test_that("Poprawna wymiana w strategia_postMDiPR",{
   expect_equivalent(strategia_postMDiPR(c(20,6,1,0,1,0,0)),c(20,2,0,1,1,0,0))
+})
+
+
+test_that("Poprawna wymiana w strategia_postMDiPR",{
+  expect_equivalent(strategia_postMDiPR(c(0,2,1,1,1,0,0)),c(36,2,1,0,1,0,0))
+})
+test_that("Poprawna wymiana w strategia_postMDiPR",{
+  expect_equivalent(strategia_postMDiPR(c(1,0,2,1,1,0,0)),c(1,6,2,0,1,0,0))
+})
+test_that("Poprawna wymiana w strategia_postMDiPR",{
+  expect_equivalent(strategia_postMDiPR(c(1,3,0,1,1,0,0)),c(1,3,3,0,1,0,0))
 })
 
 #jeden_kon_mniej_niz_127
@@ -126,3 +127,14 @@ test_that("Poprawna wymiana w strategia_postMDiPR",{
   expect_equivalent(strategia_postMDiPR(c(0,0,0,0,2,0,0)),c(6,1,2,1,1,0,0))
 })
 
+#inne
+test_that("Moze rozmnozyc sie wiele zwierzat naraz",{
+
+  na_kostkach <- c("krolik" = 1, "owca" = 1, "swinia" = 0, "krowa" = 0, "kon" = 0, "maly_pies"= 0, "duzy_pies"= 0, "lis"= 0, "wilk"= 0)
+
+  stado<-c(3,1,0,0,0,1,0)
+  stado <- rozmnazanie(stado, na_kostkach)
+
+  expect_equal(stado[1],5)
+  expect_equal(stado[2],2)
+})

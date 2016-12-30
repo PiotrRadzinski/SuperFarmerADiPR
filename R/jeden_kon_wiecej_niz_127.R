@@ -8,17 +8,17 @@
 
 jeden_kon_wiecej_niz_127 <- function( stado_tmp4 ){
   ruch_zamiana <- c(0,0)
-  if (stado_tmp4["krolik"] == 0 && stado_tmp4["krowa"] > 1 ) {
+  if (stado_tmp4["krolik"] == 0 && stado_tmp4["krowa"] > 0 ) {
     ruch_zamiana <- c("krowa", "krolik")
-  } else if (stado_tmp4["owca"] == 0 && stado_tmp4["krowa"] > 1 ) {
+  } else if  (stado_tmp4["owca"] == 0 && stado_tmp4["krowa"] > 0 ) {
     ruch_zamiana <- c("krowa", "owca")
-  } else if (stado_tmp4["swinia"] == 0 && stado_tmp4["krowa"] > 1 ) {
+  } else if (stado_tmp4["swinia"] == 0 && stado_tmp4["krowa"] > 0 ) {
     ruch_zamiana <- c("krowa", "swinia")
-  } else if (stado_tmp4["krolik"] == 0 && stado_tmp4["swinia"] > 1 ) {
+  } else if (stado_tmp4["krolik"] == 0 && stado_tmp4["swinia"] > 0 ) {
     ruch_zamiana <- c("swinia", "krolik")
-  } else if (stado_tmp4["owca"] == 0 && stado_tmp4["swinia"] > 1 ) {
+  } else if (stado_tmp4["owca"] == 0 && stado_tmp4["swinia"] > 0 ) {
     ruch_zamiana <- c("swinia", "owca")
-  } else if (stado_tmp4["krolik"] == 0 && stado_tmp4["owca"] > 1 ) {
+  } else if (stado_tmp4["krolik"] == 0 && stado_tmp4["owca"] > 0 ) {
     ruch_zamiana <- c("owca", "krolik")
   } else if (stado_tmp4["owca"] == 0 && stado_tmp4["krolik"] > 6 ) {
     ruch_zamiana <- c("krolik", "owca")

@@ -4,10 +4,12 @@
 \alias{badaj_gre}
 \title{Badanie gry}
 \usage{
-badaj_gre(strategia)
+badaj_gre(strategia, powtorzen = 10000)
 }
 \arguments{
 \item{strategia}{Przechowuje funkcje strategii gry ktora bedziemy badac.}
+
+\item{powtorzen}{Ile razy gra ma byc przeprowadzona}
 }
 \description{
 Funkcja przeprowadza gre 10.000 razy oraz wylicza statystyki czasu gry.
