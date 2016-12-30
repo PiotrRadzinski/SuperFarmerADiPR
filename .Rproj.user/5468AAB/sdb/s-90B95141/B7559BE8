@@ -1,0 +1,18 @@
+{
+    "contents" : "library(devtools)\ndevtools::install_github(\"ambroziakd/KursRprojekt2/SuperFarmerDA\")\ndevtools::install_github(\"byrolew/SuperFarmerMAPA\")\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerADiPR:::strategia_postMDiPR, 10000)\n\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerADiPR:::strategia_ADA, 500)\n\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerMoc:::strategia_Jana)\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmer.SuperDziewczyn:::strategia_wymian_0_0_0_0, 500)\n\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmer.SuperDziewczyn:::strategia_wymian_1_1_1_1, 500)\n\n# wolne\nSuperFarmerADiPR:::badaj_gre(SuperFarmerMAPA:::strategy_EV)\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerMAPA:::strategy_HEV, 500)\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerAGOJZB:::strategia_AGOJZB)\n\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmer.SuperPakiet:::strategia_1_na_wiele, 100)\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmer.SuperPakiet:::strategia_wiele_na_wiele, 100)\n\n# wolne\nSuperFarmerADiPR:::badaj_gre(SuperFarmerMAPA:::strategy_EV, 100)\n\nSuperFarmerADiPR:::badaj_gre(SuperFarmerMAPA:::strategy_HEV, 100)\n",
+    "created" : 1481195138031.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1555840824",
+    "id" : "B7559BE8",
+    "lastKnownWriteTime" : 7011605692497750387,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

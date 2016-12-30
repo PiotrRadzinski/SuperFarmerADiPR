@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Badanie gry\n#'\n#' Funkcja przeprowadza gre 10.000 razy oraz wylicza statystyki czasu gry.\n#'\n#' @param strategia Przechowuje funkcje strategii gry ktora bedziemy badac.\n#' @param powtorzen Ile razy gra ma byc przeprowadzona\n#'\n#' @export\n\n\nbadaj_gre <- function(strategia, powtorzen = 10000){\n  czasy_gier <- c()\n\n  for(i in 1:powtorzen){\n    czasy_gier[i] <- gra(strategia)\n  }\n  summary(czasy_gier)\n}\n",
+    "created" : 1481198670493.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1894947022",
+    "id" : "3C504ED2",
+    "lastKnownWriteTime" : 1481198906,
+    "path" : "C:/Users/ad345137/Desktop/SuperFarmerAiP/R/badaj_gre.R",
+    "project_path" : "R/badaj_gre.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

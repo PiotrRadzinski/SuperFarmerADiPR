@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Wykonanie strategii gdy mamy mniej ni? 2 konie\n#'\n#' Funkcja u?ywaj?c innych funkcji najpierw opracowuje optymaln? strategi? a nast?pnie wykonuje j? zwracaj?c nam stado po wymianie\n#'\n#' @param stado_tmp7 Przechowuje wartosc naszego stada\n#' @param wartosc_w_krolikach_tmp7 Przechowuje ile kazdy garunek jest warty w kr?likach\n#'\n#' @return zwraca stado po wymianach\n\nbrak_lub_1_kon <- function( stado_tmp7 , wartosc_w_krolikach_tmp7 ){\n  if(stado_tmp7[\"kon\"] == 0){\n    ruch_zmiana <- brak_konia( stado_tmp7, wartosc_w_krolikach_tmp7 )\n  } else{\n    ruch_zmiana <- jeden_kon( stado_tmp7, wartosc_w_krolikach_tmp7 )\n  }\n#Je?li ruch_zmiana[1] > 0 to wiemy, ?e jaki? ruch si? odby? (jak 0, to nie by?o ?adnego ruchu).\n  if(ruch_zmiana[1] > 0){\n    if(ruch_zmiana[2] == 50){\n      stado_tmp7 <- zamien_na_duze(ruch_zmiana[1], stado_tmp7, wartosc_w_krolikach_tmp7 )\n    } else {\n      stado_tmp7 <- zamien_zwierze_na_zwierze(ruch_zmiana[1], ruch_zmiana[2], stado_tmp7, wartosc_w_krolikach_tmp7)\n    }\n  } \n  return (stado_tmp7)\n}",
+    "created" : 1480617499193.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1722447809",
+    "id" : "14D63166",
+    "lastKnownWriteTime" : 1480594249,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/brak_lub_1_kon.R",
+    "project_path" : "R/brak_lub_1_kon.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

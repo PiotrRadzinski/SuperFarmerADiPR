@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Pojedyńcza gra\n#'\n#' Funkcja przeprowadza pojedyńczą grę wedłóg zadanej strategii\n#'\n#' @param strategia Przyjmujemy strategię jako parametr, wedle której przeprowadzimy grę.\n#'\n#' @return Zwracamy długość trwania gry.\n#'\n#' @export\n\ngra <- function(strategia){\n\n  stado_gracza <- rep(0, times = 7)\n  names(stado_gracza) <- c( \"krolik\", \"owca\", \"swinia\", \"krowa\", \"kon\", \"maly_pies\", \"duzy_pies\")\n  licznik_tur <- 0\n\n  while(licznik_tur < 100000){\n    stado_gracza <- strategia(stado_gracza)\n    if (stado_gracza[\"kon\"] * stado_gracza[\"krowa\"] * stado_gracza[\"swinia\"] * stado_gracza[\"owca\"] * stado_gracza[\"krolik\"] != 0) break\n    stado_gracza <- po_wymianach(stado_gracza)\n    licznik_tur <- licznik_tur + 1\n  }\n  return(licznik_tur)\n}\n",
+    "created" : 1480611033659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "988156493",
+    "id" : "2026F839",
+    "lastKnownWriteTime" : 1480612127,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/gra.R",
+    "project_path" : "R/gra.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

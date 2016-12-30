@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Strategia gdy nie ma konia\n#'\n#' Funkcja jest u?ywana gdy nie mamy konia, i opracowuje strategi? jakie zwierze powinno by? zamienione na jakie.\n#'\n#' @param stado_tmp3 Przechowuje wartosc naszego stada\n#' @param wartosc_w_krolikach_tmp3 Przechowuje ile kazdy garunek jest warty w kr?likach\n#'\n#' @return ruch_wymiana to wektor zwracaj?cy jakie zwierze ma by? wymienione na jakie\n\nbrak_konia <- function(stado_tmp3, wartosc_w_krolikach_tmp3){\n  ruch_zamiana <- c(0,0)\n\n  if (wartosc_stada(stado_tmp3, wartosc_w_krolikach_tmp3) >= 72) {\n    ruch_zamiana <- c(\"kon\", 50)\n  } else if ((stado_tmp3[\"maly_pies\"] == 0 && stado_tmp3[\"krolik\"] > 9) || (stado_tmp3[\"maly_pies\"] == 1 && stado_tmp3[\"krolik\"] > 25) ) {\n    ruch_zamiana<-c(\"krolik\", \"maly_pies\")\n  } else if (stado_tmp3[\"krolik\"]  < 27 && stado_tmp3[\"swinia\"] > 0) {\n    ruch_zamiana <- c(\"swinia\", \"krolik\")\n  } else if (stado_tmp3[\"krolik\"]  < 33 && stado_tmp3[\"owca\"] > 0 ) {\n    ruch_zamiana <-c (\"owca\", \"krolik\")\n  } else if (stado_tmp3[\"krolik\"] == 0  && stado_tmp3[\"maly_pies\"] > 0 ) {\n    ruch_zamiana <- c(\"maly_pies\", \"krolik\")\n  } else if (45 > stado_tmp3[\"krolik\"] && stado_tmp3[\"krolik\"] > 39  && stado_tmp3[\"owca\"] < 23) {\n    ruch_zamiana <- c(\"krolik\", \"owca\")\n  } else if (46 < stado_tmp3[\"krolik\"] && stado_tmp3[\"swinia\"] < 20) {\n    ruch_zamiana <- c(\"krolik\", \"swinia\")\n  }\n  return(ruch_zamiana)\n}\n",
+    "created" : 1480617479722.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "853178558",
+    "id" : "6BA8DF98",
+    "lastKnownWriteTime" : 1480612077,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/brak_konia.R",
+    "project_path" : "R/brak_konia.R",
+    "properties" : {
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

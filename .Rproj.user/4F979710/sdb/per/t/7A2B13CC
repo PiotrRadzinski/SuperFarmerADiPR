@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: SuperFarmerADiPR\nTitle: Symulacja gry Super Farmer\nVersion: 0.0.0.9000\nAuthors@R: c(\n    person(\"Anna\", \"Dymowska\", email = \"ad345137@students.mimuw.edu.pl\", role = c(\"aut\")),\n    person(\"Piotr\", \"Radzinski\", email = \"pr345426@students.mimuw.edu.pl\", role = c(\"cre\")))\nDescription: Pakiet przeprowadzaj?cy symulacj? gry SuperFarmer wraz z autorskimi strategiami.\nDepends:\n    R (>= 3.2.2)\nLicense: GPL-2\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 5.0.1\nSuggests: testthat\n",
+    "created" : 1480615783619.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "334520302",
+    "id" : "7A2B13CC",
+    "lastKnownWriteTime" : 1480615832,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "type" : "dcf"
+}

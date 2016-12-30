@@ -1,0 +1,18 @@
+{
+    "contents" : "> SuperFarmerADiPR:::badaj_gre(SuperFarmerADiPR:::strategia_postMDiPR)\nMin. 1st Qu.  Median    Mean 3rd Qu.    Max. \n7.00   25.00   34.00   38.95   48.00  163.00 \n\n",
+    "created" : 1481197227417.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1613467936",
+    "id" : "419B4DA0",
+    "lastKnownWriteTime" : 7011605692497750387,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Kontrola wilka i lisa\n#'\n#' Funkcja po otrzymaniu wyniku rzutu i aktualnego stada oblicza sartość stada w wypadku gdy jego część przepada.\n#'\n#' @param stado_tmp11 Przechowuje aktualne stado na potrzeby funkcji.\n#' @param kostki Przechowuje wynik rzutu kostką.\n#'\n#' @return Zwraca uaktualnione stado.\n\nwilk_i_lis <- function(stado_tmp11, kostki) {\n  if (kostki[\"wilk\"] == 1) {\n    if (stado_tmp11[\"duzy_pies\"] != 0) {\n      stado_tmp11[\"duzy_pies\"] <- stado_tmp11[\"duzy_pies\"] - 1\n    } else {\n      stado_tmp11[\"krolik\"] <- 0\n      stado_tmp11[\"owca\"] <- 0\n      stado_tmp11[\"swinia\"] <- 0\n      stado_tmp11[\"krowa\"] <- 0\n    }\n  }\n  if (kostki[\"lis\"] == 1) {\n    if (stado_tmp11[\"maly_pies\"] > 0) {\n      stado_tmp11[\"maly_pies\"] <- stado_tmp11[\"maly_pies\"] - 1\n    } else {\n      stado_tmp11[\"krolik\"] <- 0\n    }\n  }\n  return(stado_tmp11)\n}\n",
+    "created" : 1480613387143.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1152658196",
+    "id" : "84D9C54F",
+    "lastKnownWriteTime" : 1480605667,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/wilk_i_lis.R",
+    "project_path" : "R/wilk_i_lis.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

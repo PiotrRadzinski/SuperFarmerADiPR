@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Czy wygrana\n#'\n#' Konczy gre jezeli gracz wygrywa\n#'\n#' @param stado_tmp tymczasowy (tmp=temporary) wektor stada\n#'\n#' @return Zwraca wartosc 1 jezeli spelnione sa warunki wygranej\n\nczy_wygrana <- function(stado_tmp){\n\n    (stado_tmp[\"kon\"] >= 1) &\n    (stado_tmp[\"krowa\"] >= 1) &\n    (stado_tmp[\"swinia\"] >= 1) &\n    (stado_tmp[\"owca\"] >= 1) &\n    (stado_tmp[\"krolik\"] >= 1)\n\n}\n",
+    "created" : 1481200059983.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3274763916",
+    "id" : "A8E99869",
+    "lastKnownWriteTime" : 1481195079,
+    "path" : "C:/Users/ad345137/Desktop/SuperFarmerAiP/R/czy_wygrana.R",
+    "project_path" : "R/czy_wygrana.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

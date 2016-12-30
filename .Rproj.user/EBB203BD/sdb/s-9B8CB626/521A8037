@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Kontrola wilka i lisa\n#'\n#' Funkcja po otrzymaniu wyniku rzutu i aktualnego stada oblicza stan stada w wypadku gdy jego czesc przepada.\n#'\n#' @param stado_tmp11 Przechowuje aktualne stado na potrzeby funkcji.\n#' @param kostki Przechowuje wynik rzutu kostka\n#'\n#' @return Zwraca uaktualnione stado.\n\nwilk_i_lis <- function(stado_tmp11, kostki) {\n  if (kostki[\"wilk\"] == 1) {\n    if (stado_tmp11[\"duzy_pies\"] != 0) {\n      stado_tmp11[\"duzy_pies\"] <- stado_tmp11[\"duzy_pies\"] - 1\n    } else {\n      stado_tmp11[\"krolik\"] <- 0\n      stado_tmp11[\"owca\"] <- 0\n      stado_tmp11[\"swinia\"] <- 0\n      stado_tmp11[\"krowa\"] <- 0\n    }\n  }\n  if (kostki[\"lis\"] == 1) {\n    if (stado_tmp11[\"maly_pies\"] > 0) {\n      stado_tmp11[\"maly_pies\"] <- stado_tmp11[\"maly_pies\"] - 1\n    } else {\n      stado_tmp11[\"krolik\"] <- 0\n    }\n  }\n  return(stado_tmp11)\n}\n",
+    "created" : 1481117180533.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "639859306",
+    "id" : "521A8037",
+    "lastKnownWriteTime" : 1481108650,
+    "last_content_update" : 1481108650,
+    "path" : "C:/Users/Anna/Desktop/SuperFarmerAiP/R/wilk_i_lis.R",
+    "project_path" : "R/wilk_i_lis.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

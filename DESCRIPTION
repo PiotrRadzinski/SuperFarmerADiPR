@@ -1,0 +1,14 @@
+Package: SuperFarmerADiPR
+Title: Symulacja gry Super Farmer
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Anna", "Dymowska", email = "ad345137@students.mimuw.edu.pl", role = c("aut")),
+    person("Piotr", "Radzinski", email = "pr345426@students.mimuw.edu.pl", role = c("cre")))
+Description: Pakiet przeprowadzający symulację gry SuperFarmer wraz z autorskimi strategiami.
+Depends:
+    R (>= 3.2.2)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: testthat

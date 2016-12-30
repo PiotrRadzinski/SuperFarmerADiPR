@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Rozmnażanie zwierząt\n#'\n#' Funkcja przelicza stado rozmnażające się podczas rzutu.\n#'\n#' @param stado_tmp12 Przechowuje aktualne stado na potrzeby funkcji.\n#' @param kostki Przechowuje wynik rzutu kostką.\n#'\n#' @return Aktualny stan stada.\n\nrozmnazanie <- function(stado_tmp12, kostki) {\n  limit <- c(60, 24, 20, 12, 6, 4, 2)\n  nazwy_zwierzat <- c(\"krolik\", \"owca\", \"swinia\", \"krowa\", \"kon\", \"maly_pies\", \"duzy_pies\")\n  names(limit) <- nazwy_zwierzat\n\n  for (j in 1:5)\n  {\n    if (kostki[j] > 0)\n      stado_tmp12[j] <- min(stado_tmp12[j] + as.integer((stado_tmp12[j] + kostki[j]) / 2), limit[j])\n  }\n  return(stado_tmp12)\n}\n",
+    "created" : 1480611079226.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2695575271",
+    "id" : "EEA6AEC",
+    "lastKnownWriteTime" : 1480614637,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/rozmnazanie.R",
+    "project_path" : "R/rozmnazanie.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

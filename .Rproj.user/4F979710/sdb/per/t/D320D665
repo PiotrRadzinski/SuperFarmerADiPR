@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Strategia gry superfarmer\n#'\n#' Funkcja wykonuj?ca ca?? strategi? gry superfarmer\n#'\n#' @param stado_tmp9 Przechowuje warto?? naszego stada.\n#'\n#' @return Zwraca stado po wymianach.\n#'\n#' @export\n\nstrategia_postMDiPR <- function( stado_tmp9 ){\n  wartosc_w_krolikach = c(1, 6, 12, 36, 72, 6, 36)\n  nazwy_zwierzat <- c(\"krolik\", \"owca\", \"swinia\", \"krowa\", \"kon\", \"maly_pies\", \"duzy_pies\")\n  names(wartosc_w_krolikach) <- nazwy_zwierzat\n  names(stado_tmp9) <- nazwy_zwierzat\n\n  if (stado_tmp9[\"kon\"] == 0 || stado_tmp9[\"kon\"] == 1) {\n    stado_tmp9 <- brak_lub_1_kon( stado_tmp9, wartosc_w_krolikach )\n  }else if (stado_tmp9[\"kon\"] > 1 ){\n    stado_tmp9 <- wiecej_niz_1_kon( stado_tmp9 )\n  }\n  return(stado_tmp9)\n}\n",
+    "created" : 1480611226605.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1245760537",
+    "id" : "D320D665",
+    "lastKnownWriteTime" : 1480605307,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/strategia_postMDiPR.R",
+    "project_path" : "R/strategia_postMDiPR.R",
+    "properties" : {
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Rzut kostkami\n#'\n#' Funkcja wykonuje losowanie kostkami i zwraca wektor z wynikiem rzutu.\n#'\n#' @return Zwracany jest wynik losowania w postaci wektora z wyrzuconymi zwierzętami.\n\nrzut_kostkami <- function() {\n  #Losowanie kostka.\n  kostka_wilk <- sample(1:9, 1, TRUE, prob = c(1/2, 1/4, 1/12, 1/12, 0, 0, 0, 0, 1/12))\n  kostka_lis <- sample(1:9, 1, TRUE, prob = c(1/2, 1/6, 1/6, 0, 1/12, 0, 0, 1 / 12, 0))\n\n  #Zmienne przechowujace ilosc poszczegolnych zwierzat na kostce.\n  kostki <- rep(0, times = 9)\n  names(kostki) <- c(\"krolik\", \"owca\", \"swinia\", \"krowa\", \"kon\", \"maly_pies\", \"duzy_pies\", \"lis\", \"wilk\")\n\n  kostki[kostka_wilk] <- kostki[kostka_wilk] + 1\n  kostki[kostka_lis] <- kostki[kostka_lis] + 1\n  return(kostki)\n}\n",
+    "created" : 1480611226008.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "261178797",
+    "id" : "EB56DB85",
+    "lastKnownWriteTime" : 1480614521,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/rzut_kostkami.R",
+    "project_path" : "R/rzut_kostkami.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

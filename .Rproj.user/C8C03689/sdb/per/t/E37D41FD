@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Po wymianach\n#'\n#' Funkcja wykonuje wszystkie czynności które muszą zostać wykonane po wymianie zwierząt.\n#'\n#' @param stado_tmp13 Przechowuje aktualne stado na potrzeby funkcji.\n#'\n#' @return Zwraca wartość stada na zakończenie tury.\n\npo_wymianach <- function(stado_tmp13){\n  rzut <- rzut_kostkami()\n  stado_tmp13 <- wilk_i_lis(stado_tmp11 = stado_tmp13, kostki = rzut)\n  stado_tmp13 <- rozmnazanie(stado_tmp12 = stado_tmp13, kostki = rzut)\n  return(stado_tmp13)\n}\n",
+    "created" : 1480605606679.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3964469008",
+    "id" : "E37D41FD",
+    "lastKnownWriteTime" : 1480605667,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/R/po_wymianach.R",
+    "project_path" : "R/po_wymianach.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Pojedyncza gra\n#'\n#' Funkcja przeprowadza pojedyncza gre zgodnie z zadana strategia\n#'\n#' @param strategia Zadana strategia zgodnie z ktora przeprowadzimy gre.\n#'\n#' @return Zwracamy dlugosc trwania gry (liczbe tur).\n#'\n#' @export\n\ngra <- function(strategia) {\n  stado_gracza <- rep(0, times = 7)\n  names(stado_gracza) <- c( \"krolik\", \"owca\", \"swinia\", \"krowa\", \"kon\", \"maly_pies\", \"duzy_pies\")\n  licznik_tur <- 0\n\n  while(licznik_tur < 100000 && czy_wygrana(stado_gracza) == 0) {\n\n    stado_gracza <- strategia(stado_gracza)\n    if (czy_wygrana(stado_gracza)) break\n\n    na_kostkach <- rzut_kostkami()\n    stado_gracza <- wilk_i_lis(stado_gracza, na_kostkach)\n    stado_gracza <- rozmnazanie(stado_gracza, na_kostkach)\n\n    licznik_tur <- licznik_tur + 1\n  }\n\n  return(licznik_tur)\n}\n\n",
+    "created" : 1481120441778.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1821839825",
+    "id" : "7BE428D1",
+    "lastKnownWriteTime" : 1481043446,
+    "last_content_update" : 1481043446,
+    "path" : "C:/Users/Anna/Desktop/SuperFarmerAiP/R/gra.R",
+    "project_path" : "R/gra.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

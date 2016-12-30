@@ -1,0 +1,17 @@
+{
+    "contents" : "test_that(\"Poprawna wymiana w strategia_postMDiPR\",{\n  expect_equivalent(strategia_postMDiPR(c(10,1,1,1,0,1,1)),c(10,1,1,0,1,1,0))\n})\n\ntest_that(\"Poprawna wymiana w strategia_postMDiPR\",{\n  expect_equivalent(strategia_postMDiPR(c(10,0,0,0,0,0,0)),c(4,0,0,0,0,1,0))\n})\n\ntest_that(\"Poprawna wymiana w strategia_postMDiPR\",{\n  expect_equivalent(strategia_postMDiPR(c(10,0,1,0,0,1,0)),c(22,0,0,0,0,1,0))\n})\ntest_that(\"Poprawna wymiana w strategia_postMDiPR\",{\n  expect_equivalent(strategia_postMDiPR(c(10,1,0,0,0,1,0)),c(16,0,0,0,0,1,0))\n})\n",
+    "created" : 1480605143663.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "93361542",
+    "id" : "21BA8F9C",
+    "lastKnownWriteTime" : 1480605211,
+    "path" : "C:/Users/pr345426/Desktop/SuperFarmerADiPR/tests/testthat/test.R",
+    "project_path" : "tests/testthat/test.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
