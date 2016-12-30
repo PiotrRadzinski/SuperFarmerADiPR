@@ -138,3 +138,14 @@ test_that("Moze rozmnozyc sie wiele zwierzat naraz",{
   expect_equal(stado[1],5)
   expect_equal(stado[2],2)
 })
+
+test_that("Poprawna wymiana w strategia_ADA",{
+
+  stado <- c(12,1,0,0,0,1,0)
+  names(stado) <- c( "krolik", "owca", "swinia", "krowa", "kon", "maly_pies", "duzy_pies")
+
+  stado2 <- c(6,0,1,0,0,1,0)
+  names(stado2) <- c( "krolik", "owca", "swinia", "krowa", "kon", "maly_pies", "duzy_pies")
+
+  expect_equivalent(strategia_ADA(stado), stado2)
+})
