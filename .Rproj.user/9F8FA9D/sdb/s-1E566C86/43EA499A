@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "install.packages(\"devtools\")\nlibrary(devtools)\n\n\ninstall_github(\"byrolew/SuperFarmerMAPA\")\n",
+    "created" : 1483142727134.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "734101910",
+    "id" : "43EA499A",
+    "lastKnownWriteTime" : 1483146002,
+    "last_content_update" : 1483146002267,
+    "path" : "C:/Users/Lenovo/Desktop/Rtmp.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
